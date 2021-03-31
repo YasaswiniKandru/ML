@@ -1,0 +1,19 @@
+Outbreak investigation using Machine Learning.
+
+You are given a data set consisting of DNA sequences (dataset.fas) of the same length. Each DNA sequence is a string of characters from the alphabet ‘A’,’C’,’T’,’G’, and it represents a particular viral strain sampled from an infected individual. Your goal is to write a code that helps to identify transmission clusters corresponding to outbreaks.
+The sequences should be considered as feature vectors and characters - as features.  The data set is stored as a fasta file, which is essentially a text file that has the following form:
+>Name of Sequence1
+AAGCACAGGATGTAATGGTGGGGCCGACCGCCTATTATTCTGATGATTACTTGAGGCCCTCGGAGAGGAAGGGG
+>Name of Sequence2
+AAGCACAGGATGTAATGGTGGGGCCGACCGCCTATTATTCTGATGATTACTTGAGGCCCTCGGAGAGGAAGGGG
+>Name of Sequence3
+AAGCACAGGATGTAATGGTGGGGCCGACCGCCTATTATTCTGATGATTACTTGAGGCCCTCGGAGAGGAAGGGG
+…..
+Here each line starting with ‘>’ symbol contains the name of a sequence followed by the sequence itself in the next line. 
+
+The code has the following steps:
+1) Read sequences from the file.
+2) Calculate pairwise distances between sequences. Use Hamming distance: it is the number of positions at which the sequences are different 
+3) Project the sequences in 2-D space using Multidimensional Scaling (MDS) based on Hamming distance matrix.
+4) Plot the obtained 2-D data points. Estimate the number of clusters K by visual inspection. 
+5) Use k-means algorithm to cluster the 2-D data points.
