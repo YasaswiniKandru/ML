@@ -1,0 +1,15 @@
+Country	beds	age 	mortality_rate
+Canada 	25.1	17	61.36
+China 	43.2	10.6	0.35
+France	59.3	19.7	138.96
+Germany 80.1	21.5	91.02
+Italy 	31.4	23	175.97
+Japan 	130.1	27	7.06
+India	5.0	6.0	11.88
+Singapore 	25.1	12.9	0.53
+South Africa 	23.4	5.3	90.64
+Spain	30	19.4	157.83
+
+The accurate mortality rate of USA is 166
+The predicted mortality rate of USA is 115.9
+
