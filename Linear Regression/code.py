@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import numpy as np
 
-data = pd.read_csv("hw_3.csv");
+data = pd.read_csv("file.csv");
 df = pd.DataFrame(data)
 a=df.iloc[:,:-1].values  
 b=df.iloc[:,-1:].values 
